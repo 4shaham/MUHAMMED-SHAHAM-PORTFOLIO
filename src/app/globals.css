@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&display=swap");
+
+@import "tailwindcss";
+
+/* *,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+} */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #dcdcdc;
+  color: #333;
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ::selection {
+  background: #22c55e;
+  color: #fff;
+} */
+
+/* hide system cursor — custom cursor replaces it */
+* {
+  cursor: none !important;
+}
