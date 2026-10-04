@@ -2,6 +2,7 @@
 
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
+import Link from "next/link";
 
 export default function AboutSection() {
   const ref = useRef(null);
@@ -30,14 +31,10 @@ export default function AboutSection() {
           className="text-[clamp(1.5rem,3.5vw,3rem)] font-light leading-snug text-[#333] mb-10 max-w-7xl"
         >
           Hi, I’m <strong className="font-bold">Muhammed Shaham</strong>, a Full
-          Stack Developer specializing in Next.js, React, Node.js, and MERN
-          technologies. I have hands-on experience building scalable web
-          applications, REST APIs, real-time features, authentication systems,
-          and database-driven applications. I enjoy solving problems, learning
-          new technologies, and turning ideas into practical solutions. I’m
-          always looking to improve my skills, explore better development
-          practices, and work on challenging projects that create real value.
-          Feel free to explore my work and get in touch—I’d be happy to connect!
+          Stack Developer specializing in Next.js, React, Node.js, and MERN. I
+          build scalable web applications, REST APIs, real-time features, and
+          database-driven solutions. I enjoy solving problems, learning new
+          technologies, and turning ideas into practical products.
         </motion.div>
 
         <motion.div
@@ -46,13 +43,13 @@ export default function AboutSection() {
           transition={{ duration: 0.6, delay: 0.25 }}
           className="flex flex-wrap gap-4"
         >
-          <a
+          <Link
             id="more-about-btn"
-            href="#services"
+            href="/about"
             className="border border-[#333]/25 rounded-full px-7 py-2.5 text-xs tracking-[0.15em] uppercase text-[#333] font-medium hover:bg-[#333] hover:text-[#e2e2e2] transition-all duration-300"
           >
             More About Me
-          </a>
+          </Link>
           <a
             id="resume-btn"
             href="/Muhammed_Shaham_V_Resume.pdf"

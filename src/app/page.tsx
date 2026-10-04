@@ -10,6 +10,7 @@ import ExperienceSection from "@/components/ExperienceSection";
 import WorksSection from "@/components/WorksSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
+import TechStack from "@/components/TechStack";
 
 /* ─────────────────────────────────────────────────────────────────────
    ROOT
@@ -19,11 +20,12 @@ export default function Portfolio() {
     <>
       <CustomCursor />
       <Navbar />
-      <main className="pt-14  max-w-[1510px] mx-auto">
+      <main className="  max-w-[1510px] mx-auto">
         <HeroSection />
         <AboutSection />
         <ServicesSection />
         <ExperienceSection />
+        <TechStack />
         <WorksSection />
         <ContactSection />
       </main>

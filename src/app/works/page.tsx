@@ -65,7 +65,7 @@ function MockBrowser({ img, color }: { img?: string; color: string }) {
               alt="Project screenshot"
               width={680}
               height={425}
-              className="w-full h-full object-cover object-top"
+              className="w-full h-full object-contain"
             />
           ) : (
             <div className="w-full h-full p-4 flex flex-col gap-2">

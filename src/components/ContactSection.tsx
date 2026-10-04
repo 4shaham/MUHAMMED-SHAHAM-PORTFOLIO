@@ -2,6 +2,7 @@
 
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
+import Link from 'next/link';
 
 export default function ContactSection() {
   const ref = useRef(null);
@@ -29,18 +30,21 @@ export default function ContactSection() {
           Unleashing brand potential through creative design and innovation.
         </motion.p>
 
-        <motion.a
+        <motion.div
           id="get-in-touch-btn"
-          href="mailto:hello@yourname.com"
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, delay: 0.28 }}
           whileHover={{ scale: 1.04 }}
           whileTap={{ scale: 0.97 }}
-          className="border border-[#333]/30 rounded-full px-12 py-4 text-sm tracking-[0.12em] uppercase text-[#333] font-light hover:bg-[#333] hover:text-[#e2e2e2] transition-all duration-300"
         >
-          Get In Touch
-        </motion.a>
+          <Link
+            href="/contact"
+            className="border border-[#333]/30 rounded-full px-12 py-4 text-sm tracking-[0.12em] uppercase text-[#333] font-light hover:bg-[#333] hover:text-[#e2e2e2] transition-all duration-300 inline-block"
+          >
+            Get In Touch
+          </Link>
+        </motion.div>
       </div>
     </section>
   );
