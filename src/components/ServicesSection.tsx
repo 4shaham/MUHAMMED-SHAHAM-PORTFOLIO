@@ -75,7 +75,7 @@ function ServiceCard({
         transition={{ duration: CARD_DURATION, ease: smoothEase }}
         className="border border-[#333]/12 rounded-3xl overflow-hidden"
       >
-        <div className="grid grid-cols-1 md:grid-cols-[250px_1fr] min-h-[280px]">
+        <div className="grid grid-cols-1 md:grid-cols-[220px_1fr] min-h-[280px]">
           {/* Left: large number */}
           <div className="flex items-center justify-center py-6 px-6 md:p-10 border-b md:border-b-0 md:border-r border-[#333]/10">
             <span className="text-5xl md:text-7xl font-light text-[#aaa]">
@@ -128,7 +128,7 @@ export default function ServicesSection() {
   return (
     <section
       id="services"
-      className="w-full px-6 md:px-16 py-24 md:py-36 overflow-x-clip"
+      className="w-full px-4 sm:px-6 md:px-16 py-20 md:py-36 overflow-x-clip"
     >
       <div className="border-t border-[#333]/12 pt-16">
         <div ref={ref} className="mb-10">

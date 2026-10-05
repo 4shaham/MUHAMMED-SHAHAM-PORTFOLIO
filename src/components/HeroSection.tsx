@@ -151,9 +151,9 @@ export default function HeroSection() {
   return (
     <section
       id="home"
-      className="min-h-screen flex flex-col justify-between pt-16"
+      className="min-h-screen flex flex-col justify-between pt-16 overflow-x-hidden"
     >
-      <div className="flex-1 flex flex-col justify-center px-6 md:px-16 max-w-[1400px] w-full">
+      <div className="flex-1 flex flex-col justify-center px-4 sm:px-6 md:px-16 w-full">
         <div className="py-16">
           {/* One h1 for SEO / screen readers, the two lines are visual only */}
           <h1

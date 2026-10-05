@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function Footer() {
   return (
-    <footer className="w-full px-6 md:px-16 pb-8">
+    <footer className="w-full px-4 sm:px-6 md:px-16 pb-8">
       <div className="border-t border-[#333]/15 pt-6 flex flex-col md:flex-row md:items-center justify-between gap-4">
         {/* Left: logo + copyright */}
         <motion.div

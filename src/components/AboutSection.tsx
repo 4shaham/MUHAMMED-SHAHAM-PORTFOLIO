@@ -12,7 +12,7 @@ export default function AboutSection() {
     <section
       id="about"
       ref={ref}
-      className="w-full px-6 md:px-16 py-24 md:py-36"
+      className="w-full px-4 sm:px-6 md:px-16 py-20 md:py-36"
     >
       <div className="border-t border-[#333]/12 pt-16">
         <motion.p

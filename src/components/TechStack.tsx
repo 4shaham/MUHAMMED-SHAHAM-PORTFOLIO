@@ -143,61 +143,67 @@ const chipVariants: Variants = {
 export default function TechStack() {
   return (
     <section id="tech" className="px-6 py-24 md:px-16 md:py-32">
-      <div className="mx-auto grid max-w-[1400px] gap-12 md:grid-cols-[minmax(0,1fr)_minmax(0,2fr)] md:gap-16">
-        {/* Heading: stays in view while the list scrolls on desktop */}
-        <motion.div
-          initial={{ opacity: 0, y: 24 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-80px" }}
-          transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-          className="md:sticky md:top-28 md:self-start"
-        >
-          <h2 className="text-[clamp(2.25rem,5vw,4.5rem)] font-light leading-none tracking-tight text-[#333]">
-            Tech Stack
-          </h2>
-          <p className="mt-6 max-w-xs text-base font-light text-[#666]">
-            The languages, frameworks and tools I use to build and ship
-            full-stack products.
-          </p>
-        </motion.div>
+      <div className="border-t border-[#333]/12 pt-16">
+        <div className="mx-auto grid max-w-[1400px] gap-12 md:grid-cols-[minmax(0,1fr)_minmax(0,2fr)] md:gap-16">
+          {/* Heading: stays in view while the list scrolls on desktop */}
+          <motion.div
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-80px" }}
+            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+            className="md:sticky md:top-28 md:self-start"
+          >
+            <h2 className="text-[clamp(2.25rem,5vw,4.5rem)] font-light leading-none tracking-tight text-[#333]">
+              Tech Stack
+            </h2>
+            <p className="mt-6 max-w-xs text-base font-light text-[#666]">
+              The languages, frameworks and tools I use to build and ship
+              full-stack products.
+            </p>
+          </motion.div>
 
-        {/* Groups */}
-        <div>
-          {stack.map((group) => (
-            <div
-              key={group.title}
-              className="grid gap-4 border-t border-black/10 py-8 first:border-t-0 first:pt-0 sm:grid-cols-[150px_minmax(0,1fr)] sm:gap-8"
-            >
-              <h3 className="text-sm font-light text-[#666] sm:pt-2.5">
-                {group.title}
-              </h3>
-
-              <motion.ul
-                variants={listVariants}
-                initial="hidden"
-                whileInView="show"
-                viewport={{ once: true, margin: "-60px" }}
-                className="flex flex-wrap gap-2.5"
+          {/* Groups */}
+          <div>
+            {stack.map((group) => (
+              <div
+                key={group.title}
+                className="grid gap-4 border-t border-black/10 py-8 first:border-t-0 first:pt-0 sm:grid-cols-[150px_minmax(0,1fr)] sm:gap-8"
               >
-                {group.items.map(({ name, icon: Icon, color }) => (
-                  <motion.li
-                    key={name}
-                    variants={chipVariants}
-                    whileHover={{ y: -4 }}
-                    whileTap={{ scale: 0.96 }}
-                    transition={{ type: "spring", stiffness: 400, damping: 20 }}
-                    style={{ "--brand": color } as CSSProperties}
-                    className="group inline-flex cursor-default items-center gap-2.5 rounded-full border border-black/10 bg-white/40 py-1.5 pl-1.5 pr-4 text-sm font-light text-[#333] transition-[border-color,background-color,box-shadow] duration-300 hover:border-[var(--brand)] hover:bg-white/80 hover:shadow-[0_8px_20px_rgba(0,0,0,0.08)]"
-                  >
-                    <span className="grid h-8 w-8 place-items-center rounded-full bg-black/[0.05] text-[#555] transition-all duration-300 group-hover:rotate-[-8deg] group-hover:scale-110 group-hover:bg-white text-[var(--brand)]">
-                      <Icon size={17} aria-hidden />
-                    </span>
-                    {name}
-                  </motion.li>
-                ))}
-              </motion.ul>
-            </div>
-          ))}
+                <h3 className="text-sm font-light text-[#666] sm:pt-2.5">
+                  {group.title}
+                </h3>
+
+                <motion.ul
+                  variants={listVariants}
+                  initial="hidden"
+                  whileInView="show"
+                  viewport={{ once: true, margin: "-60px" }}
+                  className="flex flex-wrap gap-2.5"
+                >
+                  {group.items.map(({ name, icon: Icon, color }) => (
+                    <motion.li
+                      key={name}
+                      variants={chipVariants}
+                      whileHover={{ y: -4 }}
+                      whileTap={{ scale: 0.96 }}
+                      transition={{
+                        type: "spring",
+                        stiffness: 400,
+                        damping: 20,
+                      }}
+                      style={{ "--brand": color } as CSSProperties}
+                      className="group inline-flex cursor-default items-center gap-2.5 rounded-full border border-black/10 bg-white/40 py-1.5 pl-1.5 pr-4 text-sm font-light text-[#333] transition-[border-color,background-color,box-shadow] duration-300 hover:border-[var(--brand)] hover:bg-white/80 hover:shadow-[0_8px_20px_rgba(0,0,0,0.08)]"
+                    >
+                      <span className="grid h-8 w-8 place-items-center rounded-full bg-black/[0.05] text-[#555] transition-all duration-300 group-hover:rotate-[-8deg] group-hover:scale-110 group-hover:bg-white text-[var(--brand)]">
+                        <Icon size={17} aria-hidden />
+                      </span>
+                      {name}
+                    </motion.li>
+                  ))}
+                </motion.ul>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
