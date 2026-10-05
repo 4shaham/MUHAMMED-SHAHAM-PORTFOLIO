@@ -93,7 +93,7 @@ export default function AboutPage() {
                 className="mt-14"
               >
                 <h2 className="text-xs tracking-[0.18em] uppercase text-[#999] mb-4 font-medium">
-                  Education &amp; Experience
+                  Education
                 </h2>
 
                 <div className="divide-y divide-[#333]/10">
@@ -230,7 +230,7 @@ export default function AboutPage() {
                   Resume
                 </a>
 
-                <a
+                {/* <a
                   id="about-resume-btn"
                   href="/Degree certificate.pdf"
                   target="_self"
@@ -250,7 +250,7 @@ export default function AboutPage() {
                     <polyline points="14,2 14,8 20,8" />
                   </svg>
                   Bachelor’s Degree Certificate
-                </a>
+                </a> */}
 
                 <Link
                   id="about-get-in-touch-btn"

@@ -381,14 +381,13 @@ const projects: Project[] = [
     title: "CoinsPe",
     watermark: "OP",
     description:
-      "A cutting-edge cryptocurrency platform for secure and efficient digital asset transactions. At Subhx Infotech, I contributed by developing scalable backend architecture, implementing auto KYC verification, and ensuring a responsive, high-performance frontend. The platform offers advanced features for crypto trading and portfolio management.",
+      "A cryptocurrency trading platform for secure and efficient digital asset transactions. At Subhx Infotech, I contributed to multiple areas of the platform, starting with the development of an initial menu-based chat application with menu and submenu-driven conversations.I later worked on key platform features including the KYC module, Quick Buy, transaction history, and compliance. I developed responsive UI components, implemented and integrated REST APIs, and worked on different KYC flows including Basic KYC, Advanced KYC, and Corporate KYC. I also developed Quick Buy APIs and integrated them into the frontend, implemented transaction history UI and APIs, and contributed to compliance-related features and other platform pages.",
     tech: [
       "Next.js",
       "Node.js",
       "Express.js",
       "PostgreSQL",
       "Redis",
-      "TradingView Charts",
       "Redux",
       "Socket.IO",
       "TypeScript",
@@ -404,7 +403,16 @@ const projects: Project[] = [
     watermark: "SH",
     description:
       "A career platform for managing recruitment at Subhx Infotech. Applicants can apply online, and HR/management review applications and generate interview links. Powered by Subhx.ai, it conducts AI-driven, time-limited interviews with auto-submission, generates PDF assessment reports, and provides HR with access to answers, screen recordings, and secure activity monitoring.",
-    tech: ["Next.js", "TypeScript", "MongoDB"],
+    tech: [
+      "Next.js",
+      "Node.js",
+      "Express.js",
+      "PostgreSQL",
+      "Redis",
+      "Redux",
+      "TypeScript",
+      "Tailwind CSS",
+    ],
     img: "/project_img/subhxHireup.png",
   },
   {
@@ -412,8 +420,18 @@ const projects: Project[] = [
     title: "SUBHX Connect",
     watermark: "SC",
     description:
-      "SUBHX Connect is a high-speed broadband and network connectivity service by SUBHX Infotech, offering reliable internet solutions for residential and enterprise users. I worked on the frontend implementation, including UI/UX design, API integrations, and developing key features such as the chat support system and FAQ sections, ensuring a responsive and high-performance user experience.",
-    tech: ["React", "Node.js", "OpenAI"],
+      "SUBHX Connect is a broadband and network connectivity platform by SUBHX Infotech, providing internet solutions for residential and enterprise users. I contributed to the frontend development by building responsive UI components and integrating APIs across key features. I implemented the broadband availability check feature, including its UI and API integration, and developed the broadband purchase flow with the required UI and API integrations. I also worked on the chat support system, FAQ sections, and other platform features, focusing on a responsive and user-friendly experience.",
+    tech: [
+      "Next.js",
+      "Node.js",
+      "Express.js",
+      "PostgreSQL",
+      "Redis",
+      "Redux",
+      "TypeScript",
+      "Tailwind CSS",
+      "Socket.IO",
+    ],
     img: "/project_img/subhxConnect.png",
   },
 ];
