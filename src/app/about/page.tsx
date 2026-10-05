@@ -23,7 +23,7 @@ export default function AboutPage() {
           className="w-full min-h-screen px-6 md:px-16 pt-36 pb-24"
         >
           {/* Page title */}
-          <div className="border-t border-[#333]/12 pt-14 mb-16">
+          <div className=" pt-14 mb-16">
             <motion.p
               initial={{ opacity: 0, y: 16 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
@@ -61,23 +61,27 @@ export default function AboutPage() {
                 <p>
                   I&apos;m a passionate{" "}
                   <span className="text-[#333] font-medium">
-                    full-stack developer
+                    Full Stack Developer
                   </span>{" "}
-                  with a strong foundation in both frontend and backend
-                  technologies. I excel at creating dynamic and efficient web
-                  applications, prioritising functionality, user experience, and
-                  code quality. Currently, I&apos;m expanding my backend
-                  expertise, focusing on microservice architecture to build
-                  highly scalable and modular systems.
+                  specializing in Next.js, React, Node.js, and the MERN stack,
+                  with hands-on experience building scalable and
+                  production-oriented web applications. My experience spans both
+                  frontend and backend development, including responsive user
+                  interfaces, RESTful APIs, real-time communication,
+                  authentication, payment integrations, database design, and
+                  third-party service integrations. I focus on writing clean,
+                  maintainable, and efficient code while keeping performance,
+                  scalability, and user experience in mind. I enjoy solving
+                  complex technical problems and turning ideas into practical,
+                  reliable, and user-focused products.
                 </p>
                 <p>
-                  I&apos;m a constant learner, staying abreast of the latest
-                  trends and best practices. I thrive in collaborative and
-                  independent environments, tackling complex challenges with a
-                  problem-solving mindset. My dedication to continuous learning
-                  equips me to deliver exceptional results for diverse projects
-                  and contribute to the development of cutting-edge web
-                  applications.
+                  I’m also continuously expanding my knowledge of backend
+                  architecture, system design, and modern development practices
+                  to build more scalable and modular applications. I approach
+                  every project with a focus on problem-solving, continuous
+                  improvement, and delivering high-quality solutions that meet
+                  both technical and business requirements.
                 </p>
               </motion.div>
 
@@ -99,13 +103,13 @@ export default function AboutPage() {
                         "Bachelor of Commerce (B.Com.) – Computer Applications",
                       detail:
                         "Wadihuda Institute of Research & Advanced Studies -(Kannur University), Kerala.",
-                      year: "2021 – 2024",
+                      year: "2020 – 2023",
                     },
                     {
                       title: "MERN Stack Development",
                       detail:
-                        "Internship completed at Maitexa Info Solutions, Calicut, where I worked on building projects.",
-                      year: "2024",
+                        "Completed an intensive Full Stack Development bootcamp at Brototype, where I worked on building real-world projects.",
+                      year: "2023-2024",
                     },
                   ].map((item, i) => (
                     <motion.div
@@ -127,39 +131,6 @@ export default function AboutPage() {
                         {item.year}
                       </span>
                     </motion.div>
-                  ))}
-                </div>
-              </motion.div>
-
-              {/* Tech Stack */}
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={inView ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.6, delay: 0.56 }}
-                className="mt-14"
-              >
-                <h2 className="text-xs tracking-[0.18em] uppercase text-[#999] mb-6 font-medium">
-                  Tech Stack
-                </h2>
-                <div className="flex flex-wrap gap-2">
-                  {[
-                    "Next.js",
-                    "React",
-                    "Node.js",
-                    "Express",
-                    "MongoDB",
-                    "TypeScript",
-                    "Tailwind CSS",
-                    "REST APIs",
-                    "Git",
-                    "Figma",
-                  ].map((skill) => (
-                    <span
-                      key={skill}
-                      className="border border-[#333]/20 rounded-full px-4 py-1.5 text-xs tracking-wide text-[#555] font-light hover:border-[#333]/50 hover:text-[#333] transition-all duration-200"
-                    >
-                      {skill}
-                    </span>
                   ))}
                 </div>
               </motion.div>
@@ -257,6 +228,28 @@ export default function AboutPage() {
                     <polyline points="14,2 14,8 20,8" />
                   </svg>
                   Resume
+                </a>
+
+                <a
+                  id="about-resume-btn"
+                  href="/Degree certificate.pdf"
+                  target="_self"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-2.5 border border-[#333]/25 rounded-full px-7 py-3 text-xs tracking-[0.15em] uppercase text-[#333] font-medium hover:bg-[#333] hover:text-[#e2e2e2] transition-all duration-300"
+                >
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                  >
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                    <polyline points="14,2 14,8 20,8" />
+                  </svg>
+                  Bachelor’s Degree Certificate
                 </a>
 
                 <Link
